@@ -25,7 +25,7 @@ document.getElementById('date').innerHTML = `${todayDay} - ${todayMonth} - ${tod
 
 
 function copyFun() {
-    navigator.clipboard.writeText(520240093);
+    navigator.clipboard.writeText(000012);
   }
    
 
