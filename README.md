@@ -6,5 +6,3 @@
 3) Any additional relevant details and the link of the session.
 
 This tool would help me manage my schedule more effectively and ensure I am always prepared for my next class. I would appreciate any guidance or resources you could provide to help me create or access such a system.  
-
-Note this webite uses only html css and javascript.
