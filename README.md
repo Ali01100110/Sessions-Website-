@@ -1,4 +1,4 @@
-# Sessions-Website-
+# Sessions Organizer Website
  As a college student with multiple courses scheduled throughout the day, I am seeking a user-friendly website or platform that will allow me to efficiently track my upcoming course sessions. Specifically, I would like a system where I can easily view:
 
 1) The day of the week for each class.
