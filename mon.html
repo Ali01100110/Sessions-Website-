@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="IUL.ico">
+    <link rel="shortcut icon" href="IUL.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monday</title>
+    <script src="https://kit.fontawesome.com/55896e090a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nameid">
+            <h2><span class="text-name">Name:</span><a href="https://student.iulonline.net/dashboard" class="linkhrf" target="_blank"> Ali Farhat</a></h2>
+            <div class="copyid">
+                <h2><span class="text-id" >Id:</span> 520240093</h2>
+                <button onclick="copyFun()" class="copybtn" ><i class="fa-regular fa-copy"></i></button>
+                </div>
+        </div>
+        <div class="title">
+            <h1 class="headTitle">Monday</h1>
+        </div>
+        <div class="datetitle">
+            <h2 id="date"></h2>
+            <a href="index.html" class="lasttitle"><i class="fa-solid fa-house"></i></a>
+            </div>
+
+    </header>
+    <script>
+        const todayYear = new Date().getFullYear();
+        const todayMonth = new Date().getMonth() + 1;
+        const todayDay = new Date().getDate();
+        document.getElementById('date').innerHTML = `${todayDay} - ${todayMonth} - ${todayYear}`;
+
+        function copyFun() {
+    navigator.clipboard.writeText(520240093);
+  }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+
+@media screen and (min-width: 1000px) and (min-height: 500px) {
+    
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#bacfd8;
+}
+header{
+    user-select: none;
+    background-color: #0d4377;
+    color: #ffffff;
+    width:100%;
+    padding:25px ;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: "Headland One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+footer{
+    background-color: #0d4377;
+    color: #ffffff;
+    width:100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: "Headland One", serif;
+    font-weight: 400;
+    font-style: normal;
+    height:34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%;
+    text-align: center;
+}
+.copyid{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.copybtn{
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+   
+}
+.fa-copy{
+   color: #ffffff;
+   font-size: 15px;
+}
+.link{
+    margin: 30px;
+    
+}
+.linkhrf{
+    font-family: "Headland One", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.linkhrf:hover{
+    color: rgba(255, 255, 255, 0.79);
+    font-size: 18px;
+    transition: 0.3s;
+}
+.lasttitle{
+    
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border:  #77c4e5 solid 2px;
+    align-content: center;
+    text-align: center;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.lasttitle:hover{
+    color: #b1b1b1;
+    transition: 0.5s;
+}
+.nameid{
+    font-size: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center;
+    flex-direction: column;
+    width: 100%;
+}
+.datetitle{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.homebtn{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.text-name{
+    color: #77c4e5;
+}
+.text-id{
+    color: #77c4e5;
+}
+.title{
+    font-size: 12px;
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+}
+
+.headTitle{
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+}
+main{
+    margin-top: 25px;
+    width: 100%;
+}
+.btns{
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+    align-items:center;
+    text-align: center;
+    justify-content: center;
+}
+.btn1,.btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    background-color: rgb(255, 255, 255,0.4);
+    color: #000000;
+    margin: 10px;
+    margin-left: 50px;
+    font-size: 34px;
+    text-decoration: none;
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: #000000 solid 3px;
+    font-family: "Montserrat", sans-serif ;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: 0.3s ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.btn1{
+    pointer-events: none;
+    opacity: 0.3;
+    text-decoration: none;
+    cursor:not-allowed;
+}
+.btn2{
+    transition: 0.5s;
+}
+.btn2:hover{
+  background: #ffffff;
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+.main2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid black 2px;
+    background-color: #0d4377;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    height: 270px;
+    
+}
+.cardtitle{
+    font-size: 1.8em;
+    color: #ffffff;
+}
+.bydoctor{
+    font-size: 1.3em;
+    margin: 5px 0;
+    color: #e0e0e0;
+}
+
+.card-context-main{
+    margin: 20px;
+    padding: 10px;
+    color: #ffffff;
+}
+.time{
+    font-size: 1.2em;
+    color: #c0c0c0; 
+    margin: 5px 0;
+}
+
+.btn3{
+    scale: 1.1;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #4a90e2; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn3:hover{
+    background-color: #357ABD;
+    scale: 1.2;
+    transition: 0.3s;
+}
+
+
+
+.hiddenbtns{
+    display: none;
+}
+
+
+
+
+
+
+
+#date{
+    margin: 30px;
+    font-size: 22px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}

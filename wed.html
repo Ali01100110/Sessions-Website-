@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="IUL.ico">
+    <link rel="shortcut icon" href="IUL.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <meta http-equiv="refresh" content="10">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wednesday</title>
+    <script src="https://kit.fontawesome.com/55896e090a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nameid">
+            <h2><span class="text-name">Name:</span><a href="https://student.iulonline.net/dashboard" class="linkhrf"
+                    target="_blank"> Ali Farhat</a></h2>
+            <div class="copyid">
+                <h2><span class="text-id">Id:</span> 520240093</h2>
+                <button onclick="copyFun()" class="copybtn"><i class="fa-regular fa-copy"></i></button>
+            </div>
+        </div>
+        <div class="title">
+            <h1 class="headTitle">Wednesday</h1>
+        </div>
+        <div class="datetitle">
+            <h2 id="date"></h2>
+            <a href="index.html" class="lasttitle"><i class="fa-solid fa-house"></i></a>
+        </div>
+    </header>
+    <main class="main2">
+        <div class="card">
+            <h2 class="cardtitle" style="white-space: nowrap; font-size: 1.6em;" id="title">Computer Fundamentals
+            </h2>
+            <p class="bydoctor">Dr. Saiid Abdallah</p>
+            <p class="time">Start: 11:00 AM</p>
+            <p class="time">End: 01:30 PM</p>
+            <a href="https://moodle.iulonline.net/course/view.php?id=5064" class="card-context-main btn3"
+                target="_blank">Go To Course</a>
+        </div>
+
+        <div class="card">
+
+            <h2 class="cardtitle" style="white-space: nowrap; font-size: 1.6em;" id="title2">Linear Algebra</h2>
+            <p class="bydoctor">Dr. Mohamad Cheaito</p>
+            <p class="time">Start: 02:00 PM</p>
+            <p class="time">End: 04:30 PM</p>
+            <a href="https://moodle.iulonline.net/course/view.php?id=5054" class="card-context-main btn3"
+                target="_blank">Go To Course</a>
+        </div>
+    </main>
+    <script>
+        const todayYear = new Date().getFullYear();
+        const todayMonth = new Date().getMonth() + 1;
+        const todayDate = new Date().getDate();
+        const todayHour = new Date().getHours();
+        const todayMin = new Date().getMinutes();
+        const todayDay = new Date().getDay();
+
+        document.getElementById('date').innerHTML = `${todayDate} - ${todayMonth} - ${todayYear}`;
+        let titleColor = document.getElementById('title');
+        let titleColor2 = document.getElementById('title2');
+        
+        function copyFun() {
+            navigator.clipboard.writeText(520240093);
+        }
+        if (todayDay === 3 && ((todayHour === 11) || (todayHour === 12) || (todayHour === 13 && todayMin <= 30) ) ) {
+             titleColor.style.color='#77c4e5';
+        }
+
+        if (todayDay === 3 && ((todayHour === 14) || (todayHour === 15) || (todayHour === 16 && todayMin <= 30) ) ) {
+             titleColor2.style.color='#77c4e5';
+        }
+    </script>
+</body>
+
+</html>
